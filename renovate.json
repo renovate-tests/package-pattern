@@ -1,5 +1,75 @@
 {
   "extends": [
     "config:base"
+  ],
+  "packageRules": [
+    {
+      "packagePatterns": [
+        "babel"
+      ],
+      "groupName": "babel",
+      "schedule": [
+        "before 2am on thursday"
+      ],
+      "automerge": false,
+      "timezone": "America\/Los_Angeles"
+    },
+    {
+      "packagePatterns": [
+        "eslint"
+      ],
+      "groupName": "eslint",
+      "schedule": [
+        "before 2am on thursday"
+      ],
+      "automerge": true,
+      "automergeType": "branch-push",
+      "timezone": "America\/Los_Angeles"
+    },
+    {
+      "packagePatterns": [
+        "prettier"
+      ],
+      "groupName": "prettier",
+      "schedule": [
+        "before 2am on thursday"
+      ],
+      "automerge": true,
+      "automergeType": "branch-push",
+      "timezone": "America\/Los_Angeles"
+    },
+    {
+      "packagePatterns": [
+        "jest"
+      ],
+      "groupName": "jest",
+      "schedule": [
+        "before 2am on thursday"
+      ],
+      "automerge": true,
+      "automergeType": "branch-push",
+      "timezone": "America\/Los_Angeles"
+    },
+    {
+      "packagePatterns": [
+        "storybook"
+      ],
+      "groupName": "storybook",
+      "schedule": [
+        "before 2am on thursday"
+      ],
+      "automerge": true,
+      "automergeType": "branch-push",
+      "timezone": "America\/Los_Angeles"
+    },
+    {
+      "packagePatterns": [
+        "*"
+      ],
+      "schedule": [
+        "before 2am on thursday"
+      ],
+      "timezone": "America\/Los_Angeles"
+    }
   ]
 }
