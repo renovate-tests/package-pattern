@@ -64,7 +64,7 @@
     },
     {
       "packagePatterns": [
-        ".*"
+        "*"
       ],
       "schedule": [
         "before 2am on thursday"
